@@ -1,0 +1,405 @@
+<head>
+	<title>Drug References in Culture II</title>
+	<script src="https://code.highcharts.com/highcharts.js"></script>
+	<script src="https://code.highcharts.com/modules/treemap.js"></script>
+	<style>
+		h1{
+			font-family:sans-serif;
+			font-size:26px;
+			font-weight:bold;
+		}
+
+		p{
+			font-family:sans-serif;
+			line-height:1.2;
+			font-weight:200;
+		}
+
+		.source{
+			font-family:sans-serif; 
+			font-size:20px;
+			color:#666666;
+			line-height:1.5em; 
+		}
+	</style>
+	<h1> Drug References in Culture II</h1>
+	<p>
+	A dozen different drugs are referenced in Culture II, the follow up to 2017's Grammy-nominated album Culture. Almost every one of them is referred to by different slang terms. <p>
+
+	<p> In typical Migos fashion, two of the most well known drugs, are not even referenced by their actual name. Instead of the legal term marijuana, the trio refers to the green drug as cookie, propane, trees, and several other euphemisms. </p> 
+
+	<div id="chart-A" class="chart"></div>
+	<div class="spacer"></div>
+
+	<p> From their first hit "Bando" to their latest chart topper "Stir Fry" Quavo, Offset, and Takeoff have made a name for themselves as cocaine dealers, however, the word is not uttered once throughout the album. </p>
+
+	<p> The value of many of these drugs varies based on the location that they are being sold in. The website <a href ="http://www.streetrx.com/"> streetrx.com</a> gives users an idea of how much certain perscription drugs cost in different areas of the country based on consumer-submitted data.</p> 
+
+	<div id="chart-B" class="chart"></div>
+	<p> In the Migos' hometown of Atlanta most perscription drugs sell for five to ten dollars per pill. The all-purpous pain reliever Tylenol has no street value, due to it's accessibility and inability to get users high.</p>
+
+	<p> With adlibs included and repeated lines not taken into account, Offset drops the most references to narcotics with 32 in the album. </p>
+
+	<p>In his verse on the song Auto-Pilot, Takeoff manages to reference his abundant use of marijuana and codeine, his ability to stealthily sell cocaine, and his distaste for the popular "study drug" adderall. He drops 19 more references throughout the remaining 23 tracks. </p>
+	<div class="spacer"></div>
+	<div id="chart-C" class="chart"></div>
+
+	<p> Out of the three cousins, Quavo talks the least about drugs, but references a multitude of narcotics on three repeated hooks. On the radio smash Motor Sport, he repeats the line "Xans, Perky, check (yeah), Bill Belichick" twice.</p>
+</head>
+<body>
+	<div style="position: relative">
+		SOURCE: <a href= "https://genius.com/albums/Migos/Culture-ii"> Genius.com </a> for lyrics.
+	</p>
+	<script>
+		var myChart = Highcharts.chart("chart-A",{
+
+			chart:{
+				type:"treemap"
+			},
+
+			series: [{
+
+				data: [{
+		            id: '1', 
+		            name: 'Cocaine',
+		            color: "#EDF7FC"
+			     		   }, {
+			          		  name: 'Bricks',
+			         		   parent: '1',
+			         		   value: 9
+					        }, {
+					            name: 'Diego',
+					            parent: '1',
+					            value: 1
+					        }, {
+					            name: 'Kilos',
+					            parent: '1',
+					            value: 2
+					        }, {
+					            name: 'Birds',
+					            parent: '1',
+					            value: 10
+					        }, {
+					        	name: 'White',
+					        	parent: '1',
+					        	value: 3
+					        }, {
+					        	name: 'White Colored Sand',
+					        	parent: '1',
+					        	value: 1
+					        }, {
+					        	name: 'Keys',
+					        	parent: '1',
+					        	value: 2
+					        }, {
+					        	name: 'Lines',
+					        	parent: '1',
+					        	value: 1
+					        }, {
+					        	name:'Chicken',
+					        	parent: '1',
+					        	value: 4
+					        }, {
+					        	name: 'Pie',
+					        	parent: '1',
+					        	value: 3
+					        },
+				{
+		            id: '2',
+		            name: 'Marijuana',
+		            color: "#7CAA6F"
+					        }, {
+					        	name: 'Cookie',
+					        	parent: '2',
+					        	value: 4
+					        }, {
+					        	name:'Cook',
+					        	parent:'2',
+					        	value: 1
+					        }, {
+					        	name: 'Trees',
+					        	parent: '2',
+					        	value: 1
+					        }, {
+					        	name: 'Pack',
+					        	parent: '2',
+					        	value: 1
+					        }, {
+					        	name: 'Propane',
+					        	parent: '2',
+					        	value: 2
+					        }, {
+					        	name: 'Blunt',
+					        	parent: '2',
+					        	value: 1
+					        }, {
+		            id: '3',
+		            name: 'Codeine',
+		            color: '#8E6FAA'
+					        }, {
+					            name: 'Codeine',
+					            parent: '3',
+					            value: 5
+					        }, {
+					            name: 'Pint',
+					            parent: '3',
+					            value: 1
+					        }, {
+					            name: 'Lean',
+					            parent: '3',
+					            value: 4
+					        }, {
+					            name: 'Double Cup',
+					            parent: '3',
+					            value: 2
+					        }, {
+					            name: 'Drank',
+					            parent: '3',
+					            value: 3
+					        }, {
+					        	name: "Ac'",
+					        	parent:'3',
+					        	value: 1
+					        }, {
+					        	name:'Cotton Candy',
+					        	parent: '3',
+					        	value: 1
+
+		        }, {
+		        	id:'4',
+		        	name:'Opium',
+		        	color: '#8C6868'
+		        			}, {
+		        				name: 'Opium',
+		        				parent: '4',
+		        				value: 1
+		        }, {
+		        	id:'5',
+		        	name:'Acid',
+		        	color:'#E3DE52'
+		        			}, {
+		        				name: 'Acid',
+		        				parent: '5',
+		        				value: 2
+		        }, {
+		        	id: '6',
+		        	name: 'Percocet',
+		        	color: '#f19cbb'
+		        			}, {
+		        				name: 'Perky',
+		        				parent: '6',
+		        				value: 1
+		        			}, {
+		        				name: "Perc",
+		        				parent: '6',
+		        				value: 1
+		        			}, {
+		        				name: 'Percocet',
+		        				parent: '6',
+		        				value: 1
+		        }, {
+		        	id:'7',
+		        	name: 'Adderall',
+		        	color: '#F69197'
+		        			}, {
+		        				name:'Adderall',
+		        				parent: '7',
+		        				value: 1
+		        			}, {
+		        				name: 'Addy',
+		        				parent: '7',
+		        				value: 1
+		        }, {
+		        	id:'8',
+		        	name: 'Others',
+		        	color: '#F1821E'
+		        			}, {
+		        				name: 'Dope',
+		        				parent: '8',
+		        				value: 6
+		        			}, {
+		        				name: 'Prescription',
+		        				parent:'8',
+		        				value: 1
+		        			}, {
+		        				name: 'Narcs',
+		        				parent: '8',
+		        				value: 1
+		        			}, {
+		        				name:'Drug',
+		        				parent: '8',
+		        				value: 1
+		        			}, {
+		        				name:'Elements',
+		        				parent:'8',
+		        				value: 1
+		        			}, {
+		        				name: 'Medecine',
+		        				parent:'8',
+		        				value: 1
+		        			}, {
+		        				name: 'Meds',
+		        				parent: '8',
+		        				value: 1
+		        }, {
+		        	id:'9',
+		        	name: 'Tylenol',
+		        	color: '#F11EC4'
+		        			}, {
+		        				name: 'Tylenol',
+		        				parent: '9',
+		        				value: 1
+		        }, {
+		        	id:'10',
+		        	name: 'Xanax',
+		        	color: '#AEAE9F'
+		        			}, {
+		        				name: 'Xan',
+		        				parent: '10',
+		        				value: 1
+		        }, {
+		        	id:'11',
+		        	name: 'Meth',
+		        	color: '#80d4ff'
+		        			}, {
+		        				name: "Meth",
+		        				parent: "11",
+		        				value: 1
+		        }, {
+		        	id:'12',
+		        	name:'Bath Salts',
+		        	color:'AB4790'
+		        			}, {
+		        				name: 'Bath Salts',
+		        				parent: '12',
+		        				value: 1
+		        			}, {
+		        				name: 'Salts',
+		        				parent: '12',
+		        				value: 1
+		        }]
+			}],
+
+			plotOptions:{
+				column:{
+					stacking:"normal"
+				},
+			},
+
+			xAxis:{
+				categories:[]
+			},
+
+			yAxis:{
+				title:{
+					text:""
+				},
+			},
+
+			credits:{
+				enabled:false,
+			},
+
+			tooltip:{
+				formatter:function(){
+					return this.y+"# of mentions of the term, excluding repeat adlibs and hooks"+this.x+""+this.series.name.substring(40,44);
+				}
+			},
+
+			title:{
+				text:"Synonyms for Different Drugs",
+			},
+		});
+var myChart = Highcharts.chart("chart-B",{
+         chart: {
+        type: 'bar'
+    },
+    title: {
+        text: ' Street Value of Perscription Drugs in Atlanta'
+    },
+    subtitle: {
+        text: 'Source: streetrx.com'
+    },
+    xAxis: {
+        categories: ['Codeine', 'Percocet', 'Adderall', 'Tylenol',],
+        title: {
+            text: null
+        }
+    },
+    yAxis: {
+        min:0,
+        title: {
+            text: 'Price per 10 milligrams (U.S. Dollars)',
+            align: 'high'
+        },
+        labels: {
+            overflow: 'justify'
+        }
+    },
+    tooltip: {
+        valueSuffix: ' U.S. Dollars'
+    },
+    plotOptions: {
+        bar: {
+            dataLabels: {
+                enabled: true
+            }
+        }
+    },
+    credits: {
+        enabled: false
+    },
+    series: [{
+        name: 'U.S. Dollars',
+        data: [5, 10, 6, 0]
+    }]
+});
+var myChart = Highcharts.chart("chart-C",{
+         chart: {
+        type: 'semi-circle-donut'
+    },
+    title: {
+        text: 'Drug<br>References<br>by Rapper',
+        align: 'center',
+        verticalAlign: 'middle',
+        y: 40
+    },
+    tooltip: {
+        pointFormat: '{series.name}: <b>{point.y:.1f}</b>'
+    },
+    plotOptions: {
+        pie: {
+            dataLabels: {
+                enabled: true,
+                distance: -50,
+                style: {
+                    fontWeight: 'bold',
+                    color: 'white'
+                }
+            },
+            startAngle: -90,
+            endAngle: 90,
+            center: ['50%', '75%']
+        }
+    },
+    series: [{
+        type: 'pie',
+        name: 'Drug References',
+        innerSize: '50%',
+        data: [
+            ['Quavo', 16],
+            ['Offset', 32],
+            ['Takeoff', 23],
+            ['Guests', 2],
+            {
+                name: 'Proprietary or Undetectable',
+                y: 0.2,
+                dataLabels: {
+                    enabled: false
+                }
+            }
+        ]
+    }]
+});
+</script>
+</body>
